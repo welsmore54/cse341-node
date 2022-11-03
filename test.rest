@@ -17,3 +17,18 @@ GET http://localhost:8080/contacts/63641e2f901aa6b4c08e2131
 
 // Render
 
+###
+GET https://weston-341.onrender.com/contacts
+###
+
+###
+GET https://weston-341.onrender.com/contacts/63641e2f901aa6b4c08e212f
+###
+
+###
+GET https://weston-341.onrender.com/contacts/63641e2f901aa6b4c08e2130
+###
+
+###
+GET https://weston-341.onrender.com/contacts/63641e2f901aa6b4c08e2131
+###
