@@ -1,34 +1,52 @@
 // Local
 ###
 GET http://localhost:8080/contacts/
-###
 
 ###
 GET http://localhost:8080/contacts/63641e2f901aa6b4c08e212f
-###
 
 ###
 GET http://localhost:8080/contacts/63641e2f901aa6b4c08e2130
-###
 
 ###
-GET http://localhost:8080/contacts/63641e2f901aa6b4c08e2131
-###
+GET http://localhost:8080/contacts/636aad864fa54b1e37c4fd11
 
+###
+POST http://localhost:8080/contacts HTTP/1.1 
+content-type: application/json
+
+{
+    "firstName":"Westest",
+    "lastName":"Testwest",
+    "email":"Westest@test.com",
+    "favoriteColor":"Testue",
+    "birthday":"01-01-01"
+}
+
+###
+PUT http://localhost:8080/contacts/636aad864fa54b1e37c4fd11 HTTP/1.1
+Content-Type: application/json
+
+{
+    "birthday":"02-10-1970",
+    "email":"benkjar@gmail.com",
+    "favoriteColor":"Orange",
+    "firstName":"Benjamin",
+    "lastName":"Elsmore"
+}
+
+###
+DELETE http://localhost:8080/contacts/636c3a6a71cd1e1b2cd5c196
 // Render
 
 ###
 GET https://weston-341.onrender.com/contacts
-###
 
 ###
 GET https://weston-341.onrender.com/contacts/63641e2f901aa6b4c08e212f
-###
 
 ###
 GET https://weston-341.onrender.com/contacts/63641e2f901aa6b4c08e2130
-###
 
 ###
 GET https://weston-341.onrender.com/contacts/63641e2f901aa6b4c08e2131
-###
