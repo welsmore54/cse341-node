@@ -34,7 +34,11 @@ const createContact = async (req, res) => {
     favoriteColor: req.body.favoriteColor,
     birthday: req.body.birthday
   }
-  const output = await mongodb.getDb().db().collection('contacts').insertOne(contact)
+  const output = await mongodb
+  .getDb()
+  .db()
+  .collection('contacts')
+  .insertOne(contact)
   res.status(201).json(output);
 }
 
@@ -52,12 +56,7 @@ const updateContact = async (req,res) => {
     .db()
     .collection('contacts')
     .replaceOne({ _id: userId }, input)
-
-  if (output.modifiedCount > 0) {
     res.status(204).send()
-  } else {
-    res.status(500).json(output.error || 'There was an error when updating this contact')
-  }
 }
 
 const deleteContact = async (req,res) => {
@@ -67,7 +66,7 @@ const deleteContact = async (req,res) => {
     .db()
     .collection('contacts')
     .deleteOne({ _id: userId }, true)
-  res.status(204).send()
+  res.status(200).send()
 }
 
 module.exports = { getAllData, getSingleData, createContact, updateContact, deleteContact }

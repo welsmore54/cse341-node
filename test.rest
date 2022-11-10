@@ -36,7 +36,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:8080/contacts/636c3a6a71cd1e1b2cd5c196
+DELETE http://localhost:8080/contacts/636c3e48adc9b65cb95a4434
 // Render
 
 ###
@@ -50,3 +50,30 @@ GET https://weston-341.onrender.com/contacts/63641e2f901aa6b4c08e2130
 
 ###
 GET https://weston-341.onrender.com/contacts/63641e2f901aa6b4c08e2131
+
+###
+POST https://weston-341.onrender.com/contacts HTTP/1.1 
+content-type: application/json
+
+{
+    "firstName":"Westest",
+    "lastName":"Testwest",
+    "email":"Westest@test.com",
+    "favoriteColor":"Testue",
+    "birthday":"01-01-01"
+}
+
+###
+PUT https://weston-341.onrender.com/contacts/636c3d450d2d064f81554a1f HTTP/1.1
+Content-Type: application/json
+
+{
+    "birthday":"02-10-1970",
+    "email":"benkjar@gmail.com",
+    "favoriteColor":"Orange",
+    "firstName":"Benjamin",
+    "lastName":"Elsmore"
+}
+
+### 
+DELETE https://weston-341.onrender.com/contacts/636c3de20d2d064f81554a20
