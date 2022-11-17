@@ -1,0 +1,52 @@
+[   
+    {
+    "firstname":"Test",
+    "lastName":"Customer",
+    "phone":"(208)208-2088",
+    "address":"123 test rd",
+    "email":"testcust@test.com",
+    "password":"testest",
+    "date_of_birth":"1/1/11",
+    "gender":"Female"
+    },
+    {
+    "firstname":"Joe",
+    "lastName":"Shmoe",
+    "phone":"(208)854-1234",
+    "address":"256 Walking Way",
+    "email":"joeshmoe@gmail.com",
+    "password":"iisjoeshmo",
+    "date_of_birth":"10/2/22",
+    "gender":"Male"   
+    },
+    {
+    "firstname":"Flanableagal",
+    "lastName":"Jin",
+    "phone":"(208)425-8964",
+    "address":"PO Box 12345",
+    "email":"weirdname@gmail.com",
+    "password":"whydidmyparentsnamemethat",
+    "date_of_birth":"8/23/94",
+    "gender":"Male"   
+    },
+    {
+    "firstname":"Harry",
+    "lastName":"Faes",
+    "phone":"(208)793-7913",
+    "address":"2578 couldbea st",
+    "email":"itsfaesnotface@hotmail.com",
+    "password":"myfaceisn'thairy",
+    "date_of_birth":"8/08/20",
+    "gender":"Male"
+    },
+    {
+    "firstname":"Arnold",
+    "lastName":"Schwartzenfaker",
+    "phone":"(208)888-8885",
+    "address":"PO Box 678910",
+    "email":"itsnotatumah@yahoo.com",
+    "password":"iwlllbeback",
+    "date_of_birth":"7/01/05",
+    "gender":"Female"
+    }
+]
