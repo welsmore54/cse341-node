@@ -9,8 +9,8 @@ router.get('/:id', contactsController.getSingleData)
 
 router.post('/', contactsController.createCustomer)
 
-// router.put('/:id', contactsController.updateCustomer)
+router.put('/:id', contactsController.updateCustomer)
 
-// router.delete('/:id', contactsController.deleteCustomer)
+router.delete('/:id', contactsController.deleteCustomer)
 
 module.exports = router

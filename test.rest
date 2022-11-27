@@ -17,6 +17,23 @@ content-type: application/json
     "gender": "Female"
 }
 
+###
+PUT http://localhost:8080/customers/6382c5c15e2b753ad2374f5e HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Testing",
+    "lastName": "PUT",
+    "phone": "(999)999-9999",
+    "address": "PO Box 999999",
+    "email": "contact@customer.com",
+    "password": "testContact",
+    "date_of_birth": "9/09/99",
+    "gender": "Male"
+}
+###
+DELETE http://localhost:8080/customers/6382c5c15e2b753ad2374f5e HTTP/1.1
+
 
 
 // Render
@@ -39,3 +56,20 @@ content-type: application/json
     "date_of_birth": "9/09/99",
     "gender": "Female"
 }
+
+###
+PUT https://weston-341.onrender.com/customers/6382c5c15e2b753ad2374f5e HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Testing",
+    "lastName": "PUT",
+    "phone": "(999)999-9999",
+    "address": "PO Box 999999",
+    "email": "contact@customer.com",
+    "password": "testContact",
+    "date_of_birth": "9/09/99",
+    "gender": "Male"
+}
+###
+DELETE https://weston-341.onrender.com/customers/6382c5c15e2b753ad2374f5e HTTP/1.1
